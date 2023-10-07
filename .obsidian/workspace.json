@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "f2281e7e16e82a28",
+    "id": "cab4590266f1770e",
     "type": "split",
     "children": [
       {
-        "id": "63947033cee8d92f",
+        "id": "96c276a49adc35f9",
         "type": "tabs",
         "children": [
           {
-            "id": "48caa3a26f0315f7",
+            "id": "2776076cf59632c9",
             "type": "leaf",
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "outline.md"
+                "file": "docs/outline.md"
               }
             }
           }
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "2774cb43d866ee32",
+    "id": "91fbc80769036bd4",
     "type": "split",
     "children": [
       {
-        "id": "0de569800c0c17cd",
+        "id": "1dcc986505be5682",
         "type": "tabs",
         "children": [
           {
-            "id": "29413f61c6c94ee6",
+            "id": "ffeca47e54df994d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -41,7 +41,7 @@
             }
           },
           {
-            "id": "2e80992f3bbede54",
+            "id": "9b865b9801f6c029",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -56,7 +56,7 @@
             }
           },
           {
-            "id": "2de0b6f5d7b276fc",
+            "id": "b2b57a1ff1d6fed0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -67,23 +67,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217.5
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "576018facbec7e8c",
+    "id": "8b382fabec3c27e1",
     "type": "split",
     "children": [
       {
-        "id": "f3b1bd95c882812a",
+        "id": "86e55569e3ec66d2",
         "type": "tabs",
         "children": [
           {
-            "id": "27ba4337f0f27b02",
+            "id": "07c5a1c16df8bef5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "outline.md",
+                "file": "docs/outline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,19 +96,19 @@
             }
           },
           {
-            "id": "dc1c0d001be8f79a",
+            "id": "f0f733b247281875",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "outline.md",
+                "file": "docs/outline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "e8842b1c420929a5",
+            "id": "05f35e4541591f12",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -118,17 +119,16 @@
             }
           },
           {
-            "id": "029031928a6c2ef0",
+            "id": "2acb3850d9f3ae7d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "outline.md"
+                "file": "docs/outline.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -137,7 +137,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -146,17 +145,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48caa3a26f0315f7",
+  "active": "2776076cf59632c9",
   "lastOpenFiles": [
-    "circom_ideas.md",
-    "abstract_eng.md",
-    "abstract_hun.md",
-    "outline.md",
-    "asd.md",
-    "angelEfficientRepresentationNumerical2022.md",
-    "Untitled mindmap.md",
-    "notes/Outline.md",
-    "Untitled.canvas",
-    "draft.md"
+    "docs/circom_ideas.md",
+    "docs/outline.md"
   ]
 }
