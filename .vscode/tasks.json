@@ -7,7 +7,7 @@
             "command": "swipl",
             "args": [
                 "-s",
-                "./gas-support-policy-prolog/policy.pl"
+                "./policies/prolog/policy.pl"
             ],
             "problemMatcher": [],
             "group": {

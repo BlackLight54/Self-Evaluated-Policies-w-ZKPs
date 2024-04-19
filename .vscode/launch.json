@@ -14,11 +14,11 @@
             "linux": {
                 // "runtimeExecutable": "/usr/local/bin/gprolog",
                 "runtimeExecutable": "/usr/bin/swipl",
-                "program": "./gas-support-policy-prolog/policy.pl",
+                "program": "./policies/prolog/policy.pl",
             },
             "windows": {
                 "runtimeExecutable": "C:\\Program Files\\swipl\\bin\\swipl.exe",
-                "program": ".\\gas-support-policy-prolog\\policy.pl",
+                "program": ".\\policies\\prolog\\policy.pl",
             },
             "internalConsoleOptions": "openOnSessionStart",
             "traceCmds": {
