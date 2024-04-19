@@ -1,24 +1,23 @@
 ---
 mindmap-plugin: basic
 ---
-# Self-evaluating policies using zero knowledge proofs
 
-## Abstract
-![[abstract_eng]]
+# Self-evaluated policies using zero knowledge proofs
 
+## [[0. Abstract eng|English abstract]]
 
+## [[0. Abstract hun|Hungarian asbtract]]
 - Tételmodat: kontextusteremtés
 - absztrakt problémafelvetés
 - Megoldás
-- Milyen megoldást javaslunk
 - Ez miért jó? Generikus. Miért prolog? Kifejező ereje nagy. Miért ZKP?
 - Potenciálisan CLP(Korlátkielégítés logikai programozás)
 - konkrét use-case-en prototípuson keresztül bemutatjuk a megoldásunkat
 - Már létező de kezdeti megközelítésekkel szemben
 
-## Introduction
+## [[1. Introduction]]
 
-## Background
+## [[2. From Self-sovereign Identities to Self-evaluated policies]]
 - Prolog
 	- Meta-interpretation
 	- Zero knowledge proofs, how do they typically work?
@@ -26,17 +25,19 @@ mindmap-plugin: basic
 	- Existing use-cases for ZKPs in SSI and DLT ecosystems
 		- Brief introductrion to SSI
 		- Brief introduction to DLTs
-	- Related works
-		- "Bár léteznek datalog alapú rendszerek, ezeak azonban korlátozottal a következő módon, ezzel szeben a mi munkánk...
-		- Circuitree
+		- exsisting: walt.id and OPA
 
-## Motivation
+## [[3. Related works]]
+- "Bár léteznek datalog alapú rendszerek, ezeak azonban korlátozottak a következő módon, ezzel szeben a mi munkánk...
+- Circuitree
+- Efficient representation of CSP...
+
+## [[4. A ZKP based approach for Self-evaluated Policies]]
 - Policies over SSI credentials using declarative languages
-	- exsisting: walt.id and OPA
 - Self-evaluating policies as security and privacy guarantees
 - Privacy preserving polcies using ZKPs
 
-## Approach
+## [[5. Constraint system representation of proof tree checking]]
 - Proof of prolog evaluation with public program and private input
 	- Design of the Meta-Interpreter
 		- limitations, sub language defintion: no cut, no negation
@@ -54,13 +55,11 @@ mindmap-plugin: basic
 		- Design of the generator
 		- Implementation
 
-## Results
-- Konrét use-case-t teszteljük: Alice ancestor example
-- Validtation and analisys
-- Performance evaluation
+## [[6. Circom-based toolchain and evaluation]]
+- Results
+	- Konrét use-case-t teszteljük: Alice ancestor example
+	- Validtation and analisys
+	- Performance evaluation
+- Discussion
 
-## Discussion
-
-## Conclusion
-
-## Future work
+## [[7. Conclusion and future work]]

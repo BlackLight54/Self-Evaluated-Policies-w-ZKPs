@@ -1,0 +1,681 @@
+{
+  "goal":"endPrice(931220)",
+  "substitution": [],
+  "term": {"args": [931220 ], "name":"endPrice"},
+  "unification": {
+    "body": [
+      "monthlyConsumptions([2001,2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000])",
+      "sumOfMonthlyConsumptions([2001,2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],24006)",
+      "rollingConsumption(24006,2000)",
+      "currentConsumption(1400)",
+      "consumptionClass(2000,low)",
+      "savingsClass(2000,1400,mid)",
+      "priceBase(1045800)",
+      "applySavingsSupport(1045800,mid,low,941220)",
+      "socialCreds([('ChangedWorkcapacityCredential',nominal,10000)])",
+      "applySocialSupports(941220,[('ChangedWorkcapacityCredential',nominal,10000)],931220)"
+    ],
+    "goal":"endPrice(931220)"
+  },
+  "ztree": [
+    {
+      "goal":"monthlyConsumptions([2001,2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000])",
+      "substitution": [],
+      "term": {
+        "args": [
+          [
+            2001,
+            2001,
+            2001,
+            2001,
+            2001,
+            2001,
+            2000,
+            2000,
+            2000,
+            2000,
+            2000,
+            2000
+          ]
+        ],
+        "name":"monthlyConsumptions"
+      },
+      "unification": {
+        "body": ["true" ],
+        "goal":"monthlyConsumptions([2001,2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000])"
+      },
+      "ztree": ["true" ]
+    },
+    {
+      "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],24006)",
+      "substitution": [],
+      "term": {
+        "args": [
+          [
+            2001,
+            2001,
+            2001,
+            2001,
+            2001,
+            2001,
+            2000,
+            2000,
+            2000,
+            2000,
+            2000,
+            2000
+          ],
+          24006
+        ],
+        "name":"sumOfMonthlyConsumptions"
+      },
+      "unification": {
+        "body": [
+          "sumOfMonthlyConsumptions([2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],22005)",
+          "24006 is 22005+2001"
+        ],
+        "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],24006)"
+      },
+      "ztree": [
+        {
+          "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],22005)",
+          "substitution": [],
+          "term": {
+            "args": [
+              [
+                2001,
+                2001,
+                2001,
+                2001,
+                2001,
+                2000,
+                2000,
+                2000,
+                2000,
+                2000,
+                2000
+              ],
+              22005
+            ],
+            "name":"sumOfMonthlyConsumptions"
+          },
+          "unification": {
+            "body": [
+              "sumOfMonthlyConsumptions([2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],20004)",
+              "22005 is 20004+2001"
+            ],
+            "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],22005)"
+          },
+          "ztree": [
+            {
+              "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],20004)",
+              "substitution": [],
+              "term": {
+                "args": [
+                  [
+                    2001,
+                    2001,
+                    2001,
+                    2001,
+                    2000,
+                    2000,
+                    2000,
+                    2000,
+                    2000,
+                    2000
+                  ],
+                  20004
+                ],
+                "name":"sumOfMonthlyConsumptions"
+              },
+              "unification": {
+                "body": [
+                  "sumOfMonthlyConsumptions([2001,2001,2001,2000,2000,2000,2000,2000,2000],18003)",
+                  "20004 is 18003+2001"
+                ],
+                "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2001,2000,2000,2000,2000,2000,2000],20004)"
+              },
+              "ztree": [
+                {
+                  "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2000,2000,2000,2000,2000,2000],18003)",
+                  "substitution": [],
+                  "term": {
+                    "args": [
+                      [
+                        2001,
+                        2001,
+                        2001,
+                        2000,
+                        2000,
+                        2000,
+                        2000,
+                        2000,
+                        2000
+                      ],
+                      18003
+                    ],
+                    "name":"sumOfMonthlyConsumptions"
+                  },
+                  "unification": {
+                    "body": [
+                      "sumOfMonthlyConsumptions([2001,2001,2000,2000,2000,2000,2000,2000],16002)",
+                      "18003 is 16002+2001"
+                    ],
+                    "goal":"sumOfMonthlyConsumptions([2001,2001,2001,2000,2000,2000,2000,2000,2000],18003)"
+                  },
+                  "ztree": [
+                    {
+                      "goal":"sumOfMonthlyConsumptions([2001,2001,2000,2000,2000,2000,2000,2000],16002)",
+                      "substitution": [],
+                      "term": {
+                        "args": [
+                          [
+                            2001,
+                            2001,
+                            2000,
+                            2000,
+                            2000,
+                            2000,
+                            2000,
+                            2000
+                          ],
+                          16002
+                        ],
+                        "name":"sumOfMonthlyConsumptions"
+                      },
+                      "unification": {
+                        "body": [
+                          "sumOfMonthlyConsumptions([2001,2000,2000,2000,2000,2000,2000],14001)",
+                          "16002 is 14001+2001"
+                        ],
+                        "goal":"sumOfMonthlyConsumptions([2001,2001,2000,2000,2000,2000,2000,2000],16002)"
+                      },
+                      "ztree": [
+                        {
+                          "goal":"sumOfMonthlyConsumptions([2001,2000,2000,2000,2000,2000,2000],14001)",
+                          "substitution": [],
+                          "term": {
+                            "args": [
+                              [2001, 2000, 2000, 2000, 2000, 2000, 2000 ],
+                              14001
+                            ],
+                            "name":"sumOfMonthlyConsumptions"
+                          },
+                          "unification": {
+                            "body": [
+                              "sumOfMonthlyConsumptions([2000,2000,2000,2000,2000,2000],12000)",
+                              "14001 is 12000+2001"
+                            ],
+                            "goal":"sumOfMonthlyConsumptions([2001,2000,2000,2000,2000,2000,2000],14001)"
+                          },
+                          "ztree": [
+                            {
+                              "goal":"sumOfMonthlyConsumptions([2000,2000,2000,2000,2000,2000],12000)",
+                              "substitution": [],
+                              "term": {
+                                "args": [
+                                  [2000, 2000, 2000, 2000, 2000, 2000 ],
+                                  12000
+                                ],
+                                "name":"sumOfMonthlyConsumptions"
+                              },
+                              "unification": {
+                                "body": [
+                                  "sumOfMonthlyConsumptions([2000,2000,2000,2000,2000],10000)",
+                                  "12000 is 10000+2000"
+                                ],
+                                "goal":"sumOfMonthlyConsumptions([2000,2000,2000,2000,2000,2000],12000)"
+                              },
+                              "ztree": [
+                                {
+                                  "goal":"sumOfMonthlyConsumptions([2000,2000,2000,2000,2000],10000)",
+                                  "substitution": [],
+                                  "term": {
+                                    "args": [
+                                      [2000, 2000, 2000, 2000, 2000 ],
+                                      10000
+                                    ],
+                                    "name":"sumOfMonthlyConsumptions"
+                                  },
+                                  "unification": {
+                                    "body": [
+                                      "sumOfMonthlyConsumptions([2000,2000,2000,2000],8000)",
+                                      "10000 is 8000+2000"
+                                    ],
+                                    "goal":"sumOfMonthlyConsumptions([2000,2000,2000,2000,2000],10000)"
+                                  },
+                                  "ztree": [
+                                    {
+                                      "goal":"sumOfMonthlyConsumptions([2000,2000,2000,2000],8000)",
+                                      "substitution": [],
+                                      "term": {
+                                        "args": [ [2000, 2000, 2000, 2000 ], 8000 ],
+                                        "name":"sumOfMonthlyConsumptions"
+                                      },
+                                      "unification": {
+                                        "body": [
+                                          "sumOfMonthlyConsumptions([2000,2000,2000],6000)",
+                                          "8000 is 6000+2000"
+                                        ],
+                                        "goal":"sumOfMonthlyConsumptions([2000,2000,2000,2000],8000)"
+                                      },
+                                      "ztree": [
+                                        {
+                                          "goal":"sumOfMonthlyConsumptions([2000,2000,2000],6000)",
+                                          "substitution": [],
+                                          "term": {
+                                            "args": [ [2000, 2000, 2000 ], 6000 ],
+                                            "name":"sumOfMonthlyConsumptions"
+                                          },
+                                          "unification": {
+                                            "body": [
+                                              "sumOfMonthlyConsumptions([2000,2000],4000)",
+                                              "6000 is 4000+2000"
+                                            ],
+                                            "goal":"sumOfMonthlyConsumptions([2000,2000,2000],6000)"
+                                          },
+                                          "ztree": [
+                                            {
+                                              "goal":"sumOfMonthlyConsumptions([2000,2000],4000)",
+                                              "substitution": [],
+                                              "term": {
+                                                "args": [ [2000, 2000 ], 4000 ],
+                                                "name":"sumOfMonthlyConsumptions"
+                                              },
+                                              "unification": {
+                                                "body": [
+                                                  "sumOfMonthlyConsumptions([2000],2000)",
+                                                  "4000 is 2000+2000"
+                                                ],
+                                                "goal":"sumOfMonthlyConsumptions([2000,2000],4000)"
+                                              },
+                                              "ztree": [
+                                                {
+                                                  "goal":"sumOfMonthlyConsumptions([2000],2000)",
+                                                  "substitution": [],
+                                                  "term": {
+                                                    "args": [ [2000 ], 2000 ],
+                                                    "name":"sumOfMonthlyConsumptions"
+                                                  },
+                                                  "unification": {
+                                                    "body": [
+                                                      "sumOfMonthlyConsumptions([],0)",
+                                                      "2000 is 0+2000"
+                                                    ],
+                                                    "goal":"sumOfMonthlyConsumptions([2000],2000)"
+                                                  },
+                                                  "ztree": [
+                                                    {
+                                                      "goal":"sumOfMonthlyConsumptions([],0)",
+                                                      "substitution": [],
+                                                      "term": {
+                                                        "args": [ [], 0 ],
+                                                        "name":"sumOfMonthlyConsumptions"
+                                                      },
+                                                      "unification": {
+                                                        "body": ["true" ],
+                                                        "goal":"sumOfMonthlyConsumptions([],0)"
+                                                      },
+                                                      "ztree": ["true" ]
+                                                    },
+                                                    {
+                                                      "goal":"2000 is 0+2000",
+                                                      "substitution": [],
+                                                      "unification": {
+                                                        "body":"null",
+                                                        "goal":"2000 is 0+2000"
+                                                      },
+                                                      "ztree": ["true" ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "goal":"4000 is 2000+2000",
+                                                  "substitution": [],
+                                                  "unification": {
+                                                    "body":"null",
+                                                    "goal":"4000 is 2000+2000"
+                                                  },
+                                                  "ztree": ["true" ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "goal":"6000 is 4000+2000",
+                                              "substitution": [],
+                                              "unification": {
+                                                "body":"null",
+                                                "goal":"6000 is 4000+2000"
+                                              },
+                                              "ztree": ["true" ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "goal":"8000 is 6000+2000",
+                                          "substitution": [],
+                                          "unification": {
+                                            "body":"null",
+                                            "goal":"8000 is 6000+2000"
+                                          },
+                                          "ztree": ["true" ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "goal":"10000 is 8000+2000",
+                                      "substitution": [],
+                                      "unification": {
+                                        "body":"null",
+                                        "goal":"10000 is 8000+2000"
+                                      },
+                                      "ztree": ["true" ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "goal":"12000 is 10000+2000",
+                                  "substitution": [],
+                                  "unification": {
+                                    "body":"null",
+                                    "goal":"12000 is 10000+2000"
+                                  },
+                                  "ztree": ["true" ]
+                                }
+                              ]
+                            },
+                            {
+                              "goal":"14001 is 12000+2001",
+                              "substitution": [],
+                              "unification": {
+                                "body":"null",
+                                "goal":"14001 is 12000+2001"
+                              },
+                              "ztree": ["true" ]
+                            }
+                          ]
+                        },
+                        {
+                          "goal":"16002 is 14001+2001",
+                          "substitution": [],
+                          "unification": {
+                            "body":"null",
+                            "goal":"16002 is 14001+2001"
+                          },
+                          "ztree": ["true" ]
+                        }
+                      ]
+                    },
+                    {
+                      "goal":"18003 is 16002+2001",
+                      "substitution": [],
+                      "unification": {"body":"null", "goal":"18003 is 16002+2001"},
+                      "ztree": ["true" ]
+                    }
+                  ]
+                },
+                {
+                  "goal":"20004 is 18003+2001",
+                  "substitution": [],
+                  "unification": {"body":"null", "goal":"20004 is 18003+2001"},
+                  "ztree": ["true" ]
+                }
+              ]
+            },
+            {
+              "goal":"22005 is 20004+2001",
+              "substitution": [],
+              "unification": {"body":"null", "goal":"22005 is 20004+2001"},
+              "ztree": ["true" ]
+            }
+          ]
+        },
+        {
+          "goal":"24006 is 22005+2001",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"24006 is 22005+2001"},
+          "ztree": ["true" ]
+        }
+      ]
+    },
+    {
+      "goal":"rollingConsumption(24006,2000)",
+      "substitution": [],
+      "term": {"args": [24006, 2000 ], "name":"rollingConsumption"},
+      "unification": {
+        "body": ["2000 is 24006 / 12" ],
+        "goal":"rollingConsumption(24006,2000)"
+      },
+      "ztree": [
+        {
+          "goal":"2000 is 24006 / 12",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"2000 is 24006 / 12"},
+          "ztree": ["true" ]
+        }
+      ]
+    },
+    {
+      "goal":"currentConsumption(1400)",
+      "substitution": [],
+      "term": {"args": [1400 ], "name":"currentConsumption"},
+      "unification": {"body": ["true" ], "goal":"currentConsumption(1400)"},
+      "ztree": ["true" ]
+    },
+    {
+      "goal":"consumptionClass(2000,low)",
+      "substitution": [],
+      "term": {"args": [2000, "low" ], "name":"consumptionClass"},
+      "unification": {
+        "body": [
+          "low=low"
+        ],
+        "goal":"consumptionClass(2000,low)"
+      },
+      "ztree": [
+        {
+          "goal":"low=low",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"low=low"},
+          "ztree": ["true" ]
+        }
+      ]
+    },
+    {
+      "goal":"savingsClass(2000,1400,mid)",
+      "substitution": [],
+      "term": {"args": [2000, 1400, "mid" ], "name":"savingsClass"},
+      "unification": {
+        "body": [
+          "savings_treshold(mid,500)",
+          "600 is 2000-1400",
+          "600>500",
+          "mid=mid"
+        ],
+        "goal":"savingsClass(2000,1400,mid)"
+      },
+      "ztree": [
+        {
+          "goal":"savings_treshold(mid,500)",
+          "substitution": [],
+          "term": {"args": ["mid", 500 ], "name":"savings_treshold"},
+          "unification": {"body": ["true" ], "goal":"savings_treshold(mid,500)"},
+          "ztree": ["true" ]
+        },
+        {
+          "goal":"600 is 2000-1400",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"600 is 2000-1400"},
+          "ztree": ["true" ]
+        },
+        {
+          "goal":"600>500",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"600>500"},
+          "ztree": ["true" ]
+        },
+        {
+          "goal":"mid=mid",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"mid=mid"},
+          "ztree": ["true" ]
+        }
+      ]
+    },
+    {
+      "goal":"priceBase(1045800)",
+      "substitution": [],
+      "term": {"args": [1045800 ], "name":"priceBase"},
+      "unification": {
+        "body": [
+          "currentConsumption(1400)",
+          "currentPrice(747,'HUF')",
+          "1045800 is 747*1400"
+        ],
+        "goal":"priceBase(1045800)"
+      },
+      "ztree": [
+        {
+          "goal":"currentConsumption(1400)",
+          "substitution": [],
+          "term": {"args": [1400 ], "name":"currentConsumption"},
+          "unification": {"body": ["true" ], "goal":"currentConsumption(1400)"},
+          "ztree": ["true" ]
+        },
+        {
+          "goal":"currentPrice(747,'HUF')",
+          "substitution": [],
+          "term": {"args": [747, "HUF" ], "name":"currentPrice"},
+          "unification": {"body": ["true" ], "goal":"currentPrice(747,'HUF')"},
+          "ztree": ["true" ]
+        },
+        {
+          "goal":"1045800 is 747*1400",
+          "substitution": [],
+          "unification": {"body":"null", "goal":"1045800 is 747*1400"},
+          "ztree": ["true" ]
+        }
+      ]
+    },
+    {
+      "goal":"applySavingsSupport(1045800,mid,low,941220)",
+      "substitution": [],
+      "term": {
+        "args": [1045800, "mid", "low", 941220 ],
+        "name":"applySavingsSupport"
+      },
+      "unification": {
+        "body": [
+          "support_matrix(low,mid,percent,10)",
+          "applySupport(1045800,percent,10,941220)"
+        ],
+        "goal":"applySavingsSupport(1045800,mid,low,941220)"
+      },
+      "ztree": [
+        {
+          "goal":"support_matrix(low,mid,percent,10)",
+          "substitution": [],
+          "term": {
+            "args": ["low", "mid", "percent", 10 ],
+            "name":"support_matrix"
+          },
+          "unification": {
+            "body": ["true" ],
+            "goal":"support_matrix(low,mid,percent,10)"
+          },
+          "ztree": ["true" ]
+        },
+        {
+          "goal":"applySupport(1045800,percent,10,941220)",
+          "substitution": [],
+          "term": {
+            "args": [1045800, "percent", 10, 941220 ],
+            "name":"applySupport"
+          },
+          "unification": {
+            "body": ["104580 is 1045800*10 / 100", "941220 is 1045800-104580" ],
+            "goal":"applySupport(1045800,percent,10,941220)"
+          },
+          "ztree": [
+            {
+              "goal":"104580 is 1045800*10 / 100",
+              "substitution": [],
+              "unification": {"body":"null", "goal":"104580 is 1045800*10 / 100"},
+              "ztree": ["true" ]
+            },
+            {
+              "goal":"941220 is 1045800-104580",
+              "substitution": [],
+              "unification": {"body":"null", "goal":"941220 is 1045800-104580"},
+              "ztree": ["true" ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "goal":"socialCreds([('ChangedWorkcapacityCredential',nominal,10000)])",
+      "substitution": [],
+      "term": {
+        "args": [ ["'ChangedWorkcapacityCredential',nominal,10000" ] ],
+        "name":"socialCreds"
+      },
+      "unification": {
+        "body": ["true" ],
+        "goal":"socialCreds([('ChangedWorkcapacityCredential',nominal,10000)])"
+      },
+      "ztree": ["true" ]
+    },
+    {
+      "goal":"applySocialSupports(941220,[('ChangedWorkcapacityCredential',nominal,10000)],931220)",
+      "substitution": [],
+      "term": {
+        "args": [
+          941220,
+          ["'ChangedWorkcapacityCredential',nominal,10000" ],
+          931220
+        ],
+        "name":"applySocialSupports"
+      },
+      "unification": {
+        "body": [
+          "applySupport(941220,nominal,10000,931220)",
+          "applySocialSupports(931220,[],931220)"
+        ],
+        "goal":"applySocialSupports(941220,[('ChangedWorkcapacityCredential',nominal,10000)],931220)"
+      },
+      "ztree": [
+        {
+          "goal":"applySupport(941220,nominal,10000,931220)",
+          "substitution": [],
+          "term": {
+            "args": [941220, "nominal", 10000, 931220 ],
+            "name":"applySupport"
+          },
+          "unification": {
+            "body": ["931220 is 941220-10000" ],
+            "goal":"applySupport(941220,nominal,10000,931220)"
+          },
+          "ztree": [
+            {
+              "goal":"931220 is 941220-10000",
+              "substitution": [],
+              "unification": {"body":"null", "goal":"931220 is 941220-10000"},
+              "ztree": ["true" ]
+            }
+          ]
+        },
+        {
+          "goal":"applySocialSupports(931220,[],931220)",
+          "substitution": [],
+          "term": {"args": [931220,  [], 931220 ], "name":"applySocialSupports"},
+          "unification": {
+            "body": ["true" ],
+            "goal":"applySocialSupports(931220,[],931220)"
+          },
+          "ztree": ["true" ]
+        }
+      ]
+    }
+  ]
+}

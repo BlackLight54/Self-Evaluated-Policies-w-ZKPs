@@ -35,7 +35,7 @@ mi_proof_tree(Goal, [State]) :-
     copy_term((Goal, Body), (OriginalGoal, OriginalBody)),
     mi_proof_tree(Body, Tree),
     findall((Var, Value), (member(Var, Goal), Var = Value), Substitution),
-    extract_predicates(OriginalBody,OriginalBodyPredicates),
+    extract_predicates(Body,OriginalBodyPredicates),
     getTermDictFromTerm(Goal, GoalDict),
     getTermDictFromTerm(OriginalGoal, OriginalGoalDict),
     write("GoalDict: "), write(OriginalGoalDict), nl,
@@ -43,7 +43,7 @@ mi_proof_tree(Goal, [State]) :-
         goal:Goal,
         term: GoalDict,
         unification:_{
-            goal:OriginalGoal,
+            goal:Goal,
             % goalTerm:OriginalGoalDict,
             body:OriginalBodyPredicates
             % bodyTerm:OriginalBodyPredicatesDict

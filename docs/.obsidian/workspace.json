@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "63947033cee8d92f",
+        "id": "5ac0d6ba06c61485",
         "type": "tabs",
         "children": [
           {
-            "id": "48caa3a26f0315f7",
+            "id": "d9d60c285ad31a1a",
             "type": "leaf",
             "state": {
               "type": "mindmapView",
               "state": {
-                "file": "outline.md"
+                "file": "2. From Self-sovereign Identities to Self-evaluated policies.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "outline.md",
+                "file": "2. From Self-sovereign Identities to Self-evaluated policies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "outline.md",
+                "file": "2. From Self-sovereign Identities to Self-evaluated policies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "outline.md"
+                "file": "2. From Self-sovereign Identities to Self-evaluated policies.md"
               }
             }
           }
@@ -146,17 +148,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "48caa3a26f0315f7",
+  "active": "d9d60c285ad31a1a",
   "lastOpenFiles": [
-    "circom_ideas.md",
-    "abstract_eng.md",
-    "abstract_hun.md",
+    "3. Related works.md",
+    "5. Constraint system representation of proof tree checking.md",
+    "1. Introduction.md",
+    "0. Abstract hun.md",
+    "0. Abstract eng.md",
     "outline.md",
+    "7. Conclusion and future work.md",
+    "6. Circom-based toolchain and evaluation.md",
+    "4. A ZKP based approach for Self-evaluated Policies.md",
+    "2. From Self-sovereign Identities to Self-evaluated policies.md",
+    "Drawing 2023-10-08 17.34.47.excalidraw.md",
+    "Drawing 2023-10-08 17.31.58.excalidraw.md",
+    "notes/circom_ideas.md",
+    "circom_ideas.md",
+    "draft.md",
+    "Untitled.canvas",
+    "Untitled mindmap.md",
     "asd.md",
     "angelEfficientRepresentationNumerical2022.md",
-    "Untitled mindmap.md",
-    "notes/Outline.md",
-    "Untitled.canvas",
-    "draft.md"
+    "notes/Outline.md"
   ]
 }

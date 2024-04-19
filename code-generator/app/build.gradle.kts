@@ -7,7 +7,8 @@ plugins {
 }
 
 dependencies {
-
+    // Load the common module
+    implementation(project(":common"))
 }
 
 application {

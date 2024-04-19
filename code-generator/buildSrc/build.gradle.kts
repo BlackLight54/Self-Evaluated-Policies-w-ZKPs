@@ -14,4 +14,7 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0")
+    // https://mvnrepository.com/artifact/jpl/jpl // JAVA PROLOG LIBRARY: A Java Interface to Prolog
+    implementation("jpl:jpl:7.4.0")
+
 }

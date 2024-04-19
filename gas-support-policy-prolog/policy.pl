@@ -27,10 +27,12 @@ rollingConsumption(Sum,Result):-
 consumptionClass(RollingConsumption,Class):-
     rolling_treshold('high',Treshold),
     RollingConsumption > Treshold,
-    Class = 'high';
+    Class = 'high'.
+consumptionClass(RollingConsumption,Class):-
     rolling_treshold('mid',Treshold),
     RollingConsumption > Treshold,
-    Class = 'mid';
+    Class = 'mid'.
+consumptionClass(RollingConsumption,Class):-
     Class = 'low'.
 
 % === 4. classify using savings ===
@@ -38,11 +40,13 @@ savingsClass(RollingConsumption,Consumption,Class):-
     savings_treshold('high',Treshold),
     CurrentSaving is RollingConsumption - Consumption,
     CurrentSaving > Treshold,
-    Class = 'high';
+    Class = 'high'.
+savingsClass(RollingConsumption,Consumption,Class):-
     savings_treshold('mid',Treshold),
     CurrentSaving is RollingConsumption - Consumption,
     CurrentSaving > Treshold,
-    Class = 'mid';
+    Class = 'mid'.
+savingsClass(RollingConsumption,Consumption,Class):-
     savings_treshold('low',Treshold),
     CurrentSaving is RollingConsumption - Consumption,
     CurrentSaving > Treshold,

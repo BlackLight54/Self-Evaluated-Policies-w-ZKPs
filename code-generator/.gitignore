@@ -3,7 +3,8 @@ ancestor_js
 *.r1cs
 *.sym
 *.zkey
-powersOfTau28_hez_final_16.ptau
+*.wts
+powersOfTau*.ptau
 proof.json
 public.json
 input_tree.json
@@ -12,7 +13,7 @@ generated*
 **/build/
 **/bin/
 !src/**/build/
-
+*_js/
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -56,3 +57,4 @@ gradle-app.setting
 hs_err_pid*
 replay_pid*
 .idea
+node_modules
